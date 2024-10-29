@@ -1,0 +1,68 @@
+.contactSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #826afb; 
+}
+  
+.contactForm {
+max-width: 600px;
+width: 100%;
+background: white;
+padding: 25px 25px 30px;
+border-radius: 8px;
+box-shadow: 0 0 10px black;
+color: #333;
+margin: 25px;
+}
+
+.contactForm h2 {
+font-size: 30px;
+align-items: center;
+text-align: center;
+}
+
+.inputBox {
+margin-top: 20px;
+}
+
+.inputBox .field {
+width: 100%;
+height: 50px;
+background: transparent;
+border: 2px solid #ddd;
+outline: none;
+border-radius: 6px;
+padding: 15px;
+font-size: 16px;
+color: #333;
+margin-top: 8px;
+
+}
+.fieldMess{
+height: 200px;
+resize: none;
+width: 100%;
+background: transparent;
+color: #333;
+}
+
+form button{
+    width: 100%;
+    height: 55px;
+    background: #826afb;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: .5s;
+}
+
+form button:hover{
+    background: #624ec6;
+}

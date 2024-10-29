@@ -1,0 +1,38 @@
+.background{
+    background-color: #F7FBFC;
+}
+.introduction {
+    text-align: center; /* Centruoja turinį */
+    background-color: #F5EBEB; /* Fono spalva */
+    border-radius: 8px; /* Užapvalinti kampai */
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 800px; /* Maksimalus plotis */
+}
+
+.introduction h2 {
+    font-size: 2rem; /* Antraštės dydis */
+    margin-bottom: 20px; /* Tarpas po antrašte */
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 100%;
+}
+
+/* Responsyvus dizainas */
+@media (max-width: 768px) {
+    .introduction h2 {
+        font-size: 1.5rem; /* Mažesnis šrifto dydis antraštei */
+    }
+}

@@ -1,0 +1,45 @@
+.navigator {
+  background-color: #F5EBEB;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.conteiner {
+  display: flex;
+  flex-wrap: nowrap;         
+  justify-content: center;    /* Center the buttons */
+  gap: 10px;                  /* Space between buttons */
+  overflow-x: auto;           /* Enable horizontal scrolling on small screens */
+}
+
+.buttons {
+  display: flex;              /* Add flex display if you want to center contents inside .buttons */
+}
+
+.navigator button, .navigator .btn {
+  padding: 8px 12px;
+  background-color: #769FCD;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  white-space: nowrap;        /* Prevent text wrapping within buttons */
+}
+
+/* Hover effect */
+.navigator button:hover, .navigator .btn:hover {
+  background-color: #555;
+}
+
+/* Larger screen layout */
+@media (min-width: 769px) {
+  .navigator button, .navigator .btn {
+      padding: 10px 25px;  /* Increase padding */
+      margin: 0 15px;
+      font-size: 1.2rem;    /* Increase font size */
+  }
+}

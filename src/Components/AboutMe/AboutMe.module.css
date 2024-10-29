@@ -1,0 +1,47 @@
+.aboutMe {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    background-color: #F7FBFC;
+}
+
+.background_image {
+    background-image: url('../../photos/background.jpg'); /* Pridėkite savo foninę nuotrauką */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    position: relative; /* Kad elementai būtų rodomi viršuje */
+    z-index: 1; /* Kad turinys būtų viršuje */
+    padding: 20px;
+}
+
+.profile_picture {
+    width: 250px; /* Pakeiskite dydį pagal poreikį */
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    max-width: 600px;
+    margin: 0 auto; /* Centruojame tekstą */
+    font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+    .profile_picture {
+        width: 170px; 
+        height: 170px;
+    }
+}

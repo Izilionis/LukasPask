@@ -1,0 +1,37 @@
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Visas ekrano aukštis */
+  background-color: #f3f3f3; /* Šviesiai pilkas fonas */
+  font-family: Arial, sans-serif;
+}
+
+.loading-bar {
+  width: 100%;
+  height: 5px; /* Aukštis įkėlimo juostai */
+  background-color: #333; /* Juoda spalva */
+  position: relative;
+  overflow: hidden; /* Paslėpti perteklinį turinį */
+}
+
+.loading-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Pradžia nuo kairės */
+  width: 100%;
+  height: 100%;
+  background-color: #76c7c0; /* Įkėlimo juostos spalva */
+  animation: loading 5s linear; /* 5 sekundžių animacija */
+}
+
+@keyframes loading {
+  0% {
+    left: -100%; /* Pradžia už ekrano */
+  }
+  100% {
+    left: 100%; /* Pabaiga už ekrano */
+  }
+}

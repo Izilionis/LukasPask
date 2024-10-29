@@ -1,0 +1,28 @@
+.videoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+  }
+  
+  .video {
+    flex: 1 0 100%; /* Full width on mobile */
+     padding: 8px;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 315px; /* Set a fixed height, or use a percentage if needed */
+  }
+  
+  @media (min-width: 768px) { /* Tablets and larger screens */
+    .video {
+      flex: 1 0 calc(50% - 16px); /* 2 videos per row with spacing */
+    }
+  }
+  
+  @media (min-width: 1024px) { /* Laptops and larger screens */
+    .video {
+      flex: 1 0 calc(33.33% - 16px); /* 3 videos per row with spacing */
+    }
+  }
+  
